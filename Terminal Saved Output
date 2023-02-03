@@ -1,0 +1,106 @@
+Last login: Mon Jan 23 08:45:52 on console
+carolyn.holen@VCSU-D9L761V71X ~ % $ brew install git
+zsh: command not found: $
+carolyn.holen@VCSU-D9L761V71X ~ % brew install git
+Running `brew update --auto-update`...
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+liblerc
+
+==> Fetching dependencies for git: gettext and pcre2
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.21.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:356b52e24b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.42
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:23ce93cf86bd
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.39.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:64f0c9cc05c506
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Installing dependencies for git: gettext and pcre2
+==> Installing git dependency: gettext
+==> Pouring gettext--0.21.1.arm64_monterey.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gettext/0.21.1: 1,983 files, 20.9MB
+==> Installing git dependency: pcre2
+==> Pouring pcre2--10.42.arm64_monterey.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pcre2/10.42: 230 files, 6.2MB
+==> Installing git
+==> Pouring git--2.39.1.arm64_monterey.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.39.1: 1,617 files, 48MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+carolyn.holen@VCSU-D9L761V71X ~ % man git
+
+       introduction.
+
+       After you mastered the basic concepts, you can come back to this page to
+       learn what commands Git offers. You can learn more about individual Git
+       commands with "git help command". gitcli(7) manual page gives you an
+       overview of the command-line command syntax.
+
+       A formatted and hyperlinked copy of the latest Git documentation can be
+       viewed at https://git.github.io/htmldocs/git.html or
+       https://git-scm.com/docs.
+
+OPTIONS
+       -v, --version
+           Prints the Git suite version that the git program came from.
+
+           This option is internally converted to git version ... and accepts
+           the same options as the git-version(1) command. If --help is also
+           given, it takes precedence over --version.
+
+       -h, --help
+           Prints the synopsis and a list of the most commonly used commands. If
+           the option --all or -a is given then all available commands are
+           printed. If a Git command is named this option will bring up the
+           manual page for that command.
+
+           Other options are available to control how the manual page is
+           displayed. See git-help(1) for more information, because git --help
+           ... is converted internally into git help ....
+
+       -C <path>
+           Run as if git was started in <path> instead of the current working
+           directory. When multiple -C options are given, each subsequent
+           non-absolute -C <path> is interpreted relative to the preceding -C
+           <path>. If <path> is present but empty, e.g.  -C "", then the current
+           working directory is left unchanged.
+
+           This option affects options that expect path name like --git-dir and
+           --work-tree in that their interpretations of the path names would be
+           made relative to the working directory caused by the -C option. For
+           example the following invocations are equivalent:
+
+               git --git-dir=a.git --work-tree=b -C c status
+               git --git-dir=c/a.git --work-tree=c/b status
+
+:
